@@ -45,6 +45,10 @@ client.on("disconnected", () => {
 // Start WhatsApp
 client.initialize();
 
+//test
+app.get("/", (req, res) => {
+  res.send("WhatsApp Bot Running");
+});
 
 // API to send message
 app.post("/send", async (req, res) => {
